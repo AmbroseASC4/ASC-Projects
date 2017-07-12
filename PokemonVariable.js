@@ -1,0 +1,21 @@
+var charizardHP = 73;
+var charizardNum = 6;
+var charizardType = "Fire and Flying";
+var charizardBestMove = "FlameThrower";
+var charizardLastEvo = true;
+console.log("Charizard's HP = "+charizardHP);
+console.log("charizard's Number = "+charizardNum);
+console.log("Charizard's Type = "+charizardType);
+console.log("Charizard's Best Move = "+charizardBestMove);
+console.log("Charizard's Last Evolution = "+charizardLastEvo);
+//piplup
+var piplupHP = 53;
+var piplupNum = 393;
+var piplupType = "water";
+var piplupBestMove = "whirlpool";
+var piplupLastEvo = false;
+console.log("Piplup's HP = "+piplupHP);
+console.log("Piplup's Number = "+piplupNum);
+console.log("Piplup's Type = "+piplupType);
+console.log("Piplup's Best Move = "+piplupBestMove);
+console.log("Piplup's Last Evolution = "+piplupLastEvo);

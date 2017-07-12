@@ -1,0 +1,1 @@
+var myArray = ["nick", 7, true];
