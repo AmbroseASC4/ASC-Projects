@@ -1,15 +1,27 @@
 function setup(){
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(1300, 800);
     background('black');
 }
 
-var x = 0;
-var y = 0;
+var x = 30;
+var y = 30;
+var xspeed = 9; 
+var yspeed = 10;
+var j = random(20, 500);
 
 function draw(){
     background('black');
-    fill(255);
-    ellipse(x, y, 100, 100);
-    x = x + 10;
-    y = y + 9;
+    fill(random(0, 255), random(0, 255), random(0, 255));
+    ellipse(x, y, random(20, 500), random(20, 500));
+   
+    x = x + xspeed; 
+    if( x > 1300 || x < 0){
+        xspeed = -xspeed;
+    }
+
+    y = y + yspeed;
+
+    if(y > 800 || y < 0){
+        yspeed = -yspeed;
+    }
 }
