@@ -34,3 +34,15 @@ function Pizza(sauce, cheese, toppings, size){
 }
 
 var pizza = new Pizza('tomato', 'mozzarella', ['pinapple', 'ham', 'bacon'], 'XXL');
+
+function Book(name, author, year){
+    this.name = name;
+    this.author = author;
+    this.year = year;
+    
+    var i = 1;
+    console.log('Book ' + (i++) + ': ' + this.name + ' by ' 
+                     + this.author + ' (' + this.year + ')');
+}
+
+var book1 = new Book('The Road Ahead', 'Bill Gates', 1995)
