@@ -13,11 +13,19 @@ var y = 30;
 
 function draw(){
     background('black');
+    fill(255);
+    rect(1200, mouseY, 5, 50);
     fill(random(0, 255), random(0, 255), random(0, 255));
-    ellipse(x, y, 100, 100);
+    ellipse(x, y, 50, 50);
+   
    
     x = x + xspeed; 
     if( x > 1300 || x < 0){
+        textSize(40);
+        text('Game Over!', 650, 400, 500, 100);
+    }
+
+    if( x > ){
         xspeed = -xspeed;
     }
 
@@ -26,4 +34,6 @@ function draw(){
     if(y > 800 || y < 0){
         yspeed = -yspeed;
     }
+
+
 }

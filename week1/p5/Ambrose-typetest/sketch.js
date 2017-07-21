@@ -6,7 +6,7 @@ function setup(){
 
  var x = 0;
     s = 'a';
-    vlaue = 0;
+    value = 0;
 function draw(){
 
    background('black');
@@ -29,5 +29,7 @@ function draw(){
 function keyTyped(){
     if (key === s){
         value = value + 10;
-    }else if(key != s)
+    }else if(key != s){
+        value = value - 5;    
+    }
 }
