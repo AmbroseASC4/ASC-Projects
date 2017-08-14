@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rock game</title>
+
+    <script
+        src="http://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+
+    <script src= "sketch.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCFVvCC5B0BAOI6nqTeLPpbwHdABslNCRo",
+            authDomain: "rpsgame-268ac.firebaseapp.com",
+            databaseURL: "https://rpsgame-268ac.firebaseio.com",
+            projectId: "rpsgame-268ac",
+            storageBucket: "",
+            messagingSenderId: "879551386563"
+        };
+            firebase.initializeApp(config);
+    </script>
+
+</head>
+<body>
+
+    <h1>ROCK, PAPER, SCISSORS!!</h1>
+
+    <p id="result"></p>
+
+    <div>
+    <button onclick="rock()">rock</button>
+    <button onclick="paper()">paper</button>
+    <button onclick="scissors()">scissors</button>
+    </div>
+
+    
+
+</body>
+</html>
