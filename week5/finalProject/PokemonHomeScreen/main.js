@@ -31,4 +31,3 @@ function onSignOut() {
         $(".userPhoto").attr("src", "http://farazblog.com/theme/logo-404.jpg");
     });
 }
-
