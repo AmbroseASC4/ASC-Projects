@@ -132,21 +132,24 @@ img{
 
 .bottom{
     font-size: 30px;
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
 .userPhoto{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     top: 3%;
 }
 
 .userImg{
+    position: absolute;
+    padding-bottom: 10px;
+    left: 90%;
     border: 2px solid blanchedalmond;
     top: 3%;
     border-radius: 50%;
-    width:100px;
-    height:100px;
+    width:50px;
+    height:50px;
     padding: 4px;
     margin: 0 auto;
     background-color: rebeccapurple;
