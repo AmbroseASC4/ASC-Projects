@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Saira');
+
 body{
     background-image: url('pokemon.png');
     background-attachment: fixed;
@@ -124,10 +126,13 @@ img{
     width: 1250px;
     height: 200px;
     font-size: 130px;
-    font-family: Courier New, Courier, monospace;
+    font-family: 'Luckiest Guy', cursive;
     color: #ffdd00;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: blue;
+}
+p{
+    font-family: 'Luckiest Guy', cursive;
 }
 
 .bottom{

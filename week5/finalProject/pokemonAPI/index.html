@@ -34,8 +34,8 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="/PokemonHomeScreen/index.html">Home</a>
             <a href="#">Match Finder</a>
-            <a href="#">My Pokemons</a>
-            <a href="#">Games</a>
+            <a href="/savedPokemon/index.html">My Pokemons</a>
+            <a href="/gamePage/index.html">Games</a>
         </div>
     <!-- Use any element to open the sidenav -->
     <br><button onclick="openNav()" class="navbut"><img class ="threeNav" src="https://image.flaticon.com/icons/png/512/16/16049.png"></button>
@@ -70,26 +70,23 @@
             <button onclick="searchPokemon('grass')" style="background-color:#03b71b"> Grass</button>
         </div>
         
-                <!--<p id="name" style="color: red"></p><br>-->
+                <!-- <p id="name" style="color: red"></p><br> -->
             <p id="pokename">Bulbasaur</p><br>
             <p id="urlPoke" style="color: black"></p>
             <div class="picture">
             <img id="YourPokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"><br>
         </div>
     <!--========================For user to be able to save their pokemon match with a message==========================================-->
+    
     <div class="userContainer">
         <form>
             
             <div class="GObutton">
-                <input type="reset" onclick="updateDB();" value="Submit/Update">
+                <button type="reset" onclick="updateDB();" >Submit</button>
             </div>
         </form>
     </div>
-    <!---->
-    <div>
 <!--=====================================================Saved Pokemon======================================================-->
-    <div id = "pokeAppend">
-        
-    </div>
+
 </body>
 </html>

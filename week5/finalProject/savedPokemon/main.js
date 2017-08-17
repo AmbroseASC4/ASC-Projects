@@ -2,10 +2,17 @@
 var database = firebase.database().ref();
 //button executes this function
 function updateDB() {
+    var name = $("#name").val();
     var PokemonName = $("#pokename").text();
+    var message = $("#message").val();
     var image = $("#YourPokemon").attr("src");
 
+   
+    console.log(name + " : " + message);
+
     var value = {
+        NAME: name,
+        MESSAGE: message,
         IMAGE: image,
         POKENAME: PokemonName
     }
@@ -14,7 +21,9 @@ function updateDB() {
 
 database.on("child_added", function (rowData) {
     var row = rowData.val();
+    var name = row.NAME;
     var image = row.IMAGE;
+    var message = row.MESSAGE;
     var PokemonName = row.POKENAME;
     var fullText = " <p>" + PokemonName + ":" + image + "</p>";
     $(".allMessages").append("<p>" + PokemonName + "<p>" +  "<img src = '" + image + "' >");
